@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+   Time:2022/3/23星期三21:48
+   Author:包洪岩
+   Version:1.0.0
+   Remark：1.Vue实例的作用范围是什么？
+               vuw会管理el选项命中的元素机器内部的后代元素
+          2.是否可以使用其他的选择器
+              可以使用其他选择器建议使用id选择
+          3.是否可以设置其他的dom元素
+          可以 但不可以挂载在body和html
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>el挂载点</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+<div class="app">
+    {{message}}
+</div>
+<script>
+    var app=new Vue({
+        el:".app",
+        data:{
+            message:"这是测试"
+        }
+    });
+
+</script>
+</body>
+</html>

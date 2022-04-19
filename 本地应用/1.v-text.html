@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+   Time:2022/3/24星期四7:15
+   Author:包洪岩
+   Version:1.0.0
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-text</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <h2 v-text="message+'!'">四平</h2>
+    <h2 v-text="info+'?'">四平</h2>
+    <h2>{{message+'?'}}深圳</h2>
+</div>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            message:"测试一下",
+            info:"我是交前端的"
+        }
+    });
+</script>
+</body>
+</html>

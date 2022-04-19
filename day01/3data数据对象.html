@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+   Time:2022/3/24星期四7:05
+   Author:包洪岩
+   Version:1.0.0
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data数据对象</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <h2>{{school.name}} {{school.tel}}</h2>
+    <ul>
+        <li>{{campus[0]}}</li>
+    </ul>
+</div>
+<script>
+
+    var app=new Vue({
+        el:"#app",
+        data:{
+            message:"你好，清晨",
+            school:{
+                name:"四平职业大学",
+                tel:"119110120114"
+            },
+            campus:["北京校区","上海校区","广州校区","深圳校区"]
+        }
+    });
+</script>
+</body>
+</html>
